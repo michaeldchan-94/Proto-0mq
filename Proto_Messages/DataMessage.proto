@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message DataMessage {
+    optional string Message_Name = 1;
+    optional string Message_ID = 2;
+    repeated DataFrame Message_Data = 3;
+}
+
+message DataFrame {
+    repeated double data = 1;
+    repeated string string_data = 2;
+}
